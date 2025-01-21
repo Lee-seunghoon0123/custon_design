@@ -13,7 +13,6 @@
 }
 .redoUndo{
     margin-top: 20px;
-    border: 1px solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 10vw;
@@ -26,12 +25,16 @@
     height: 80%;
     border-radius: 10%;
     margin:auto;
+    cursor: pointer;
 }
 .redo{
+    background-color: transparent;
+    border-color: transparent;
     width: 80%;
     height: 80%;
     border-radius: 10%;
     margin:auto;
+    cursor: pointer;
 }
 
 
@@ -45,11 +48,11 @@
 }
 
 .menu{
-    position:absolute;
+    position:relative;
     background-color: rgb(178, 178, 178);
     position:absolute;
     right:-100%;
-    top:200px;
+    top:150px;
     overflow:hidden;
     opacity: 90%;
     display: block;
@@ -60,6 +63,9 @@
     right:5%;
 }
 .menuBtn{
+    position: absolute;
+    right:10px;
+    top:180px;
     width: 5vw;
     height: 4vh;
 }
@@ -68,7 +74,10 @@
     height: 80vh;
     width: 30vw;
 }
-
+.closeBtn{
+    background-color: transparent;
+    border-color: transparent;
+}
 .comp::-webkit-scrollbar {
     width: 10px;
 }
